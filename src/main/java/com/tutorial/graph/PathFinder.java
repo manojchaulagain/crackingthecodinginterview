@@ -1,4 +1,4 @@
-package com.tutorial.graph.graph;
+package com.tutorial.graph;
 
 /**
  * Created using IntelliJ IDEA
