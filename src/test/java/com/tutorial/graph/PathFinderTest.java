@@ -1,5 +1,8 @@
 package com.tutorial.graph;
 
+import org.junit.Assert;
+import org.junit.Test;
+
 /**
  * Created using IntelliJ IDEA
  * User: Manoj
@@ -20,6 +23,10 @@ public class PathFinderTest {
     |         C O N S T R U C T O R S           |
     ============================================*/
 
+   @Test
+   public void testJunit() {
+       Assert.assertEquals(2, 2);
+   }
    /*--------------------------------------------
     |   P U B L I C    A P I    M E T H O D S   |
     ============================================*/
