@@ -1,4 +1,4 @@
-package com.tutorial.graph;
+package com.tutorial.datastructures;
 
 import org.junit.Assert;
 import org.junit.BeforeClass;

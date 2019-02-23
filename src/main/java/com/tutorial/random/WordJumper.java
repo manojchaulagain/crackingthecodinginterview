@@ -1,4 +1,4 @@
-package com.tutorial.graph;
+package com.tutorial.random;
 
 import org.apache.log4j.Logger;
 

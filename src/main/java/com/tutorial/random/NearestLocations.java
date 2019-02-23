@@ -1,4 +1,4 @@
-package com.tutorial.graph;
+package com.tutorial.random;
 
 import java.util.ArrayList;
 import java.util.Arrays;
