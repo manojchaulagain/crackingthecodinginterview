@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RunManager" selected="Application.TrieTestRunner">
+    <configuration name="PalindromePermutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tutorial.random.PalindromePermutation" />
+      <module name="crackingthecodinginterview" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tutorial.random.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RotateMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tutorial.random.RotateMatrix" />
+      <module name="crackingthecodinginterview" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tutorial.random.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringCompression" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tutorial.random.StringCompression" />
+      <module name="crackingthecodinginterview" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tutorial.random.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringPermutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tutorial.random.StringPermutation" />
+      <module name="crackingthecodinginterview" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tutorial.random.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrieTestRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tutorial.random.TrieTestRunner" />
+      <module name="crackingthecodinginterview" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tutorial.random.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TrieTestRunner" />
+        <item itemvalue="Application.RotateMatrix" />
+        <item itemvalue="Application.StringCompression" />
+        <item itemvalue="Application.PalindromePermutation" />
+        <item itemvalue="Application.StringPermutation" />
+      </list>
+    </recent_temporary>
+  </component>
+</project>
