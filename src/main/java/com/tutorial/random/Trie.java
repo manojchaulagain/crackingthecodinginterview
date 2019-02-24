@@ -52,6 +52,39 @@ public class Trie {
         return found;
     }
 
+    public List<String> searchWords(String prefix) {
+        List<String> words = new ArrayList<>();
+        Node curr = head;
+        boolean found = false;
+        List<String> chunks = chunksList(prefix);
+        for (String chunk : chunks) {
+            if (curr != null && curr.children != null) {
+                curr = curr.children.get(chunk);
+                if (curr == null) {
+                    break;
+                } else {
+                    if (curr.key.equalsIgnoreCase(prefix)) {
+                        found = true;
+                        break;
+                    }
+                }
+
+            }
+        }
+        if (found) {
+            searchWords(curr, words);
+        }
+
+        return words;
+    }
+
+    private void searchWords(Node prefixNode, List<String> words) {
+        if (prefixNode.isWord) {
+            words.add(prefixNode.key);
+        }
+        prefixNode.children.values().forEach(childNode -> searchWords(childNode, words));
+    }
+
     public Node getHead() {
         return head;
     }

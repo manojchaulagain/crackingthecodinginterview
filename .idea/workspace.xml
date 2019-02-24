@@ -1,5 +1,305 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="150ed3a0-82f3-49cf-bc4b-fef56839adca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/random/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/random/Trie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tutorial/random/TrieTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tutorial/random/TrieTestRunner.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path=".idea/libraries/Maven__com_thoughtworks_qdox_qdox_2_0_M8.xml" />
+    <ignored path=".idea/libraries/Maven__commons_io_commons_io_2_5.xml" />
+    <ignored path=".idea/libraries/Maven__junit_junit_4_12.xml" />
+    <ignored path=".idea/libraries/Maven__org_apache_maven_maven_aether_provider_3_0.xml" />
+    <ignored path=".idea/libraries/Maven__org_apache_maven_maven_artifact_3_0.xml" />
+    <ignored path=".idea/libraries/Maven__org_apache_maven_maven_core_3_0.xml" />
+    <ignored path=".idea/libraries/Maven__org_apache_maven_maven_model_3_0.xml" />
+    <ignored path=".idea/libraries/Maven__org_apache_maven_maven_model_builder_3_0.xml" />
+    <ignored path=".idea/libraries/Maven__org_apache_maven_maven_plugin_api_3_0.xml" />
+    <ignored path=".idea/libraries/Maven__org_apache_maven_maven_repository_metadata_3_0.xml" />
+    <ignored path=".idea/libraries/Maven__org_apache_maven_maven_settings_3_0.xml" />
+    <ignored path=".idea/libraries/Maven__org_apache_maven_maven_settings_builder_3_0.xml" />
+    <ignored path=".idea/libraries/Maven__org_apache_maven_plugins_maven_compiler_plugin_3_8_0.xml" />
+    <ignored path=".idea/libraries/Maven__org_apache_maven_shared_maven_shared_incremental_1_1.xml" />
+    <ignored path=".idea/libraries/Maven__org_apache_maven_shared_maven_shared_utils_3_2_1.xml" />
+    <ignored path=".idea/libraries/Maven__org_codehaus_plexus_plexus_classworlds_2_2_3.xml" />
+    <ignored path=".idea/libraries/Maven__org_codehaus_plexus_plexus_compiler_api_2_8_4.xml" />
+    <ignored path=".idea/libraries/Maven__org_codehaus_plexus_plexus_compiler_javac_2_8_4.xml" />
+    <ignored path=".idea/libraries/Maven__org_codehaus_plexus_plexus_compiler_manager_2_8_4.xml" />
+    <ignored path=".idea/libraries/Maven__org_codehaus_plexus_plexus_component_annotations_1_5_5.xml" />
+    <ignored path=".idea/libraries/Maven__org_codehaus_plexus_plexus_interpolation_1_14.xml" />
+    <ignored path=".idea/libraries/Maven__org_codehaus_plexus_plexus_java_0_9_10.xml" />
+    <ignored path=".idea/libraries/Maven__org_codehaus_plexus_plexus_utils_2_0_4.xml" />
+    <ignored path=".idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+    <ignored path=".idea/libraries/Maven__org_ow2_asm_asm_6_2.xml" />
+    <ignored path=".idea/libraries/Maven__org_sonatype_aether_aether_api_1_7.xml" />
+    <ignored path=".idea/libraries/Maven__org_sonatype_aether_aether_impl_1_7.xml" />
+    <ignored path=".idea/libraries/Maven__org_sonatype_aether_aether_spi_1_7.xml" />
+    <ignored path=".idea/libraries/Maven__org_sonatype_aether_aether_util_1_7.xml" />
+    <ignored path=".idea/libraries/Maven__org_sonatype_plexus_plexus_cipher_1_4.xml" />
+    <ignored path=".idea/libraries/Maven__org_sonatype_plexus_plexus_sec_dispatcher_1_3.xml" />
+    <ignored path=".idea/libraries/Maven__org_sonatype_sisu_sisu_guice_noaop_2_1_7.xml" />
+    <ignored path=".idea/libraries/Maven__org_sonatype_sisu_sisu_inject_bean_1_4_2.xml" />
+    <ignored path=".idea/libraries/Maven__org_sonatype_sisu_sisu_inject_plexus_1_4_2.xml" />
+    <ignored path=".idea/compiler.xml" />
+    <ignored path=".idea/misc.xml" />
+    <ignored path=".idea/vcs.xml" />
+    <ignored path="coding.iml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tutorial/random/TrieTestRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/input1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/words_alpha.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="321273" column="9" lean-forward="true" selection-start-line="321273" selection-start-column="9" selection-end-line="321273" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tutorial/random/Solution.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tutorial/random/TwoDArray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tutorial/random/Trie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="82" column="38" lean-forward="true" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
+              <folding>
+                <element signature="e#2515#2516#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tutorial/random/HashMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tutorial/random/Disjoint.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tutorial/random/Levenshtein.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>under</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/tutorial/graph/Permutation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tutorial/graph/HashNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tutorial/graph/CustomMap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tutorial/graph/TestMap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tutorial/graph/CustomHashMap.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/tutorial/graph/CustomMapTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tutorial/graph/WordJumper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tutorial/graph/datastructures/CustomHashMap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tutorial/graph/datastructures/CustomMap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tutorial/datastructures/CustomMap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tutorial/random/Permutation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tutorial/random/WordJumper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tutorial/random/NearestLocations.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/tutorial/random/NearestLocationsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/tutorial/datastructures/CustomMapTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tutorial/random/LongestSubstringNoRepeat.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tutorial/random/StringAllUniqueChars.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tutorial/random/IsPalindromePermutation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tutorial/random/IsPermutation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tutorial/random/StringPermutation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tutorial/random/PalindromePermutation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tutorial/random/StringCompression.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tutorial/random/RotateMatrix.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tutorial/random/Levenshtein.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tutorial/random/Disjoint.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tutorial/random/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tutorial/random/Trie.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tutorial/random/TrieTestRunner.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="crackingthecodinginterview" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crackingthecodinginterview" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crackingthecodinginterview" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crackingthecodinginterview" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crackingthecodinginterview" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crackingthecodinginterview" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crackingthecodinginterview" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crackingthecodinginterview" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crackingthecodinginterview" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crackingthecodinginterview" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crackingthecodinginterview" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crackingthecodinginterview" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tutorial" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crackingthecodinginterview" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crackingthecodinginterview" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crackingthecodinginterview" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crackingthecodinginterview" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="graph" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crackingthecodinginterview" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crackingthecodinginterview" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="random" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crackingthecodinginterview" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crackingthecodinginterview" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551047356590" />
+    <property name="extract.method.default.visibility" value="private" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.tutorial.datastructures" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/tutorial/random" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected="Application.TrieTestRunner">
     <configuration name="PalindromePermutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tutorial.random.PalindromePermutation" />
@@ -75,5 +375,249 @@
         <item itemvalue="Application.StringPermutation" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="150ed3a0-82f3-49cf-bc4b-fef56839adca" name="Default Changelist" comment="" />
+      <created>1550827238138</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1550827238138</updated>
+      <workItem from="1550827239287" duration="26074000" />
+      <workItem from="1550997097233" duration="28000" />
+      <workItem from="1551044093694" duration="2978000" />
+    </task>
+    <task id="LOCAL-00001" summary="adsfasdf">
+      <created>1550827330918</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1550827330918</updated>
+    </task>
+    <task id="LOCAL-00002" summary="idea changes">
+      <created>1550827461884</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1550827461884</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Implemented Hash Map">
+      <created>1550886680831</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1550886680831</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fixed some grouping">
+      <created>1550886961658</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1550886961658</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fixed the name">
+      <created>1550887045621</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1550887045621</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fixed the name">
+      <created>1550887090416</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1550887090416</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Implement StringCompression">
+      <created>1550967314995</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1550967314995</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Merged random repository changes and deleted the unneeded repository.">
+      <created>1551045077216</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1551045077216</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1652000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1920" y="-157" width="1920" height="1057" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19116081" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32953367" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30984455" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32953367" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tutorial/random/Permutation.java</url>
+          <line>11</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tutorial/datastructures/CustomHashMap.java</url>
+          <line>55</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tutorial/random/LongestSubstringNoRepeat.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tutorial/random/StringAllUniqueChars.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tutorial/random/PalindromePermutation.java</url>
+          <line>14</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tutorial/random/StringCompression.java</url>
+          <line>11</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tutorial/random/RotateMatrix.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tutorial/random/TrieTestRunner.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tutorial/random/Trie.java</url>
+          <line>77</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tutorial/random/Trie.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tutorial/random/Validate_Python_Indentation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tutorial/random/WordJumper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tutorial/random/RotateArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/words.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/words_alpha.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="321273" column="9" lean-forward="true" selection-start-line="321273" selection-start-column="9" selection-end-line="321273" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/input1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tutorial/random/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tutorial/random/Trie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="82" column="38" lean-forward="true" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
+          <folding>
+            <element signature="e#2515#2516#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tutorial/random/TrieTestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

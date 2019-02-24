@@ -2,6 +2,8 @@ package com.tutorial.random;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class TrieTestRunner {
@@ -18,5 +20,8 @@ public class TrieTestRunner {
         }
         trie.getHead().children.size();
         System.out.println(trie.search("aaaaaa"));
+        List<String> words = trie.searchWords("aa");
+        System.out.println(Arrays.toString(words.toArray()));
+        System.out.println(words.size());
     }
 }
