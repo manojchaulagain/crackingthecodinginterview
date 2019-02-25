@@ -1,27 +1,24 @@
 package com.tutorial.random;
 
-import java.util.ArrayList;
+import java.util.*;
 import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import java.util.stream.IntStream;
 
 public class Trie {
 
-    private Node head;
+    private TrieNode head;
 
     public Trie() {
-        head = new Node("", false, new HashMap<>());
+        head = new TrieNode("", false, new HashMap<>());
     }
 
     public void add(String val) {
-        Node curr = head;
+        TrieNode curr = head;
         List<String> chunks = chunksList(val);
         for (String chunk : chunks) {
-
-            Node node = curr.children.get(chunk);
-            if (node == null) {
-                curr.children.put(chunk, new Node(chunk, val.equalsIgnoreCase(chunk), new HashMap<>()));
+            TrieNode trieNode = curr.children.get(chunk);
+            if (trieNode == null) {
+                curr.children.put(chunk, new TrieNode(chunk, val.equalsIgnoreCase(chunk), new HashMap<>()));
                 curr = curr.children.get(chunk);
             } else {
                 curr = curr.children.get(chunk);
@@ -34,7 +31,7 @@ public class Trie {
 
     public boolean search(String val) {
         boolean found = false;
-        Node curr = head;
+        TrieNode curr = head;
         List<String> chunks = chunksList(val);
         for (String chunk : chunks) {
             if (curr != null && curr.children != null) {
@@ -54,7 +51,7 @@ public class Trie {
 
     public List<String> searchWords(String prefix) {
         List<String> words = new ArrayList<>();
-        Node curr = head;
+        TrieNode curr = head;
         boolean found = false;
         List<String> chunks = chunksList(prefix);
         for (String chunk : chunks) {
@@ -78,15 +75,17 @@ public class Trie {
         return words;
     }
 
-    private void searchWords(Node prefixNode, List<String> words) {
-        if (prefixNode.isWord) {
-            words.add(prefixNode.key);
+    private void searchWords(TrieNode prefixTrieNode, List<String> words) {
+        Stack<TrieNode> stack = new Stack<>();
+        stack.push(prefixTrieNode);
+        while (!stack.isEmpty()) {
+            TrieNode curr = stack.pop();
+            if(curr.isWord) {
+                words.add(curr.key);
+            }
+            curr.children.values().forEach(stack::push);
         }
-        prefixNode.children.values().forEach(childNode -> searchWords(childNode, words));
-    }
-
-    public Node getHead() {
-        return head;
+//        prefixTrieNode.children.values().forEach(childNode -> searchWords(childNode, words));
     }
 
     private List<String> chunksList(String val) {
@@ -95,13 +94,13 @@ public class Trie {
         return chunks;
     }
 
-    public class Node {
+    public class TrieNode {
 
         String key;
         boolean isWord;
-        Map<String, Node> children;
+        Map<String, TrieNode> children;
 
-        Node(final String key, final boolean isWord, Map<String, Node> children) {
+        TrieNode(final String key, final boolean isWord, Map<String, TrieNode> children) {
             this.key = key;
             this.isWord = isWord;
             this.children = children;
