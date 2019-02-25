@@ -8,7 +8,7 @@ public class StringCompression {
         System.out.println(sc.compressString(val));
     }
 
-    public String compressString(String val) {
+    private String compressString(String val) {
         StringBuilder sb = new StringBuilder();
         int count = 0;
         for (int j = 0, i = 0; i < val.length(); i++) {

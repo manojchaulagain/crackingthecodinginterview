@@ -9,7 +9,7 @@ public class StringPermutation {
         System.out.println(stringPermutation.isPermutation(s1, s2));
     }
 
-    public boolean isPermutation(String s1, String s2) {
+    private boolean isPermutation(String s1, String s2) {
         if (s1.length() != s2.length()) {
             return false;
         } else {
