@@ -24,7 +24,7 @@ public class TrieRunner {
         } catch (FileNotFoundException e) {
             logger.error("Could not load the words file", e);
         }
-        System.out.println(trie.search("aaa"));
+        System.out.println(trie.contains("aaa"));
         List<String> words = trie.searchWords("understa");
         System.out.println(Arrays.toString(words.toArray()));
         System.out.println(words.size());
