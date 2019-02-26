@@ -1,4 +1,4 @@
-package com.tutorial.random;
+package com.tutorial.datastructures;
 
 import org.apache.log4j.Logger;
 
