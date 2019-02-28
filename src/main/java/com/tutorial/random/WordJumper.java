@@ -16,46 +16,42 @@ public class WordJumper {
     private static Set<String> words = new HashSet<>();
 
     public static void main(String[] args) {
-        String word = "am";
-        String finalWord = "it";
+        String word = "dog";
+        String finalWord = "cat";
         WordJumper wordJumper = new WordJumper();
         wordJumper.loadDictionary("src/main/resources/words_alpha.txt");
         System.out.println(wordJumper.routeBetweenTwoWords(word, finalWord));
     }
 
     public boolean routeBetweenTwoWords(String startString, String target) {
-        Set<String> foundWords = new HashSet<>();
-        findAllOneLetterChanges(startString, foundWords, target);
-        boolean foundRoute = foundWords.contains(startString) && foundWords.contains(target);
-        System.out.println(foundWords.size());
-        System.out.println(foundRoute);
-        return foundRoute;
+        return findAllOneLetterChanges(startString, target);
     }
 
-    private void findAllOneLetterChanges(String word, final Set<String> foundWords, final String target) {
+    private boolean findAllOneLetterChanges(String origin, final String target) {
         final Stack<String> stack = new Stack<>();
-        stack.push(word);
-        boolean found = false;
+        stack.push(origin);
+        Set<String> stackWords = new HashSet<>();
         while (!stack.empty()) {
             final String stackWord = stack.pop();
-            if (stackWord.equalsIgnoreCase(target)) {
-                found = true;
-            }
-            if (!found) {
+            stackWords.add(stackWord);
+            if (!stackWord.equalsIgnoreCase(target)) {
                 System.out.print(stackWord + " -> ");
+            } else {
+                System.out.println(stackWord);
+                return true;
             }
             for (int j = 0; j < stackWord.length(); j++) {
                 for (char i = 'a'; i <= 'z'; i++) {
-                    String newWord = swap(stackWord, j, i);
-                    if (words.contains(newWord)) {
-                        if (!newWord.equalsIgnoreCase(stackWord) && !foundWords.contains(newWord)) {
+                    if (stackWord.charAt(j) != i) {
+                        String newWord = swap(stackWord, j, i);
+                        if (words.contains(newWord) && !stackWords.contains(newWord) && !newWord.equalsIgnoreCase(stackWord))
                             stack.push(newWord);
-                        }
-                        foundWords.add(newWord);
+
                     }
                 }
             }
         }
+        return false;
     }
 
     public void loadDictionary(String fileName) {
