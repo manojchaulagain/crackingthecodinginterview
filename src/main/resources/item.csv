@@ -1,0 +1,10 @@
+item_id,category              ,category
+1      ,Apple Computers   ,electronics/computer
+2      ,Microsoft         ,electronics/computer
+3      ,Sealy Bed         ,furniture/bed
+4      ,Sealy Office Desk ,furniture/desk
+5      ,Sealy Chair       ,furniture/chair
+6      ,Ball Pen          ,stationary/pen
+7      ,Pencil            ,stationary/pencil
+8      ,Everton Radio     ,electronics/radio
+9      ,Samsung Television,electronics/television
