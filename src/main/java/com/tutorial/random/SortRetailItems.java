@@ -2,9 +2,7 @@ package com.tutorial.random;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class SortRetailItems {
 
@@ -28,7 +26,7 @@ public class SortRetailItems {
         String category;
         Map<String, Item> subCatMap;
 
-        public Item(int count, String category) {
+        Item(int count, String category) {
             this.count = count;
             this.category = category;
             subCatMap = new HashMap<>();
@@ -39,11 +37,11 @@ public class SortRetailItems {
 
         Item head;
 
-        public ItemTree() {
+        ItemTree() {
             head = new Item(0, "");
         }
 
-        public void addItem(String category) {
+        void addItem(String category) {
             Item curr = head;
             curr.count += 1;
             while (category.contains("/")) {
@@ -65,12 +63,43 @@ public class SortRetailItems {
             }
         }
 
-        public void printItemsCount() {
+        void printItemsCount() {
             Item curr = head;
+            System.out.println("-----------------------------------");
             printNodeCount("", curr);
+            System.out.println("-----------------------------------");
+            printItemsCountDFS();
+            System.out.println("-----------------------------------");
+            printItemsCountBFS();
         }
 
-        public void printNodeCount(String val, Item node) {
+        void printItemsCountDFS() {
+            Item curr = head;
+            Stack<Item> stack = new Stack<>();
+            stack.add(curr);
+            while (!stack.isEmpty()) {
+                curr = stack.pop();
+                stack.addAll(curr.subCatMap.values());
+                System.out.println(curr.category + " " + curr.count);
+            }
+        }
+
+        void printItemsCountBFS() {
+            Item curr = head;
+            Queue<Item> stack = new LinkedList<>();
+            stack.add(curr);
+            while (!stack.isEmpty()) {
+                Item pop = stack.poll();
+                System.out.println(pop.category + " " + pop.count);
+                stack.addAll(pop.subCatMap.values());
+            }
+            String s = "10";
+            System.out.println(s.charAt(0) == '1');
+            System.out.println(s.charAt(1) == '0');
+            System.out.println((char) 966);
+        }
+
+        void printNodeCount(String val, Item node) {
             System.out.println(val + " " + node.count);
             node.subCatMap.values().forEach(n -> printNodeCount(val + "/" + n.category, n));
         }
