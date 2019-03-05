@@ -16,8 +16,8 @@ public class WordJumper {
     private static Set<String> words = new HashSet<>();
 
     public static void main(String[] args) {
-        String word = "dog";
-        String finalWord = "cat";
+        String word = "mat";
+        String finalWord = "nat";
         WordJumper wordJumper = new WordJumper();
         wordJumper.loadDictionary("src/main/resources/words_alpha.txt");
         System.out.println(wordJumper.routeBetweenTwoWords(word, finalWord));
@@ -31,13 +31,16 @@ public class WordJumper {
         final Stack<String> stack = new Stack<>();
         stack.push(origin);
         Set<String> stackWords = new HashSet<>();
-        while (!stack.empty()) {
+        int count = 0;
+        while (!stack.isEmpty()) {
             final String stackWord = stack.pop();
+            count++;
             stackWords.add(stackWord);
             if (!stackWord.equalsIgnoreCase(target)) {
                 System.out.print(stackWord + " -> ");
             } else {
                 System.out.println(stackWord);
+                System.out.println(count);
                 return true;
             }
             for (int j = 0; j < stackWord.length(); j++) {
