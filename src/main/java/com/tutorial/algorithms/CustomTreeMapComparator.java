@@ -48,17 +48,16 @@ public class CustomTreeMapComparator {
             System.out.println();
         });
     }
-
+    
+   /*--------------------------------------------
+    |    N O N - P U B L I C    M E T H O D S   |
+    ============================================*/
 
     private static <K extends Comparable<? super K>, V extends Comparable<? super V>> SortedSet<Map.Entry<K, V>> entriesSortedByValue(Map<K, V> map) {
         SortedSet<Map.Entry<K, V>> sortedEntries = new TreeSet<>(Comparator.comparing(Map.Entry::getKey));
         sortedEntries.addAll(map.entrySet());
         return sortedEntries;
     }
-
-   /*--------------------------------------------
-    |    N O N - P U B L I C    M E T H O D S   |
-    ============================================*/
 
    /*--------------------------------------------
     |   A C C E S S O R S / M O D I F I E R S   |
