@@ -1,5 +1,6 @@
 package com.tutorial.algorithms;
 
+import java.util.HashMap;
 import java.util.Stack;
 
 /**
@@ -26,7 +27,12 @@ public class BalancedBrackets {
     |   P U B L I C    A P I    M E T H O D S   |
     ============================================*/
 
+    private static HashMap<Character, Character> map = new HashMap<>();
+
     public static void main(String[] args) {
+        map.put('(', ')');
+        map.put('{', '}');
+        map.put('[', ']');
         int count = 0;
         String longestBal = "";
         String val = "(()";
@@ -42,18 +48,19 @@ public class BalancedBrackets {
         System.out.println(longestBal);
         System.out.println(count);
         System.out.println(isBalanced("{(){[[(())]]}}"));
+        System.out.println(isBalanced("(())"));
     }
 
     private static boolean isBalanced(String s) {
         Stack<Character> stack = new Stack<>();
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
-            if (c == '(' || c == '{' || c == '[') {
+            if (map.containsKey(c)) {
                 stack.push(c);
             } else {
                 if (!stack.isEmpty()) {
                     Character pop = stack.pop();
-                    if ((c == ')' && pop != '(') || (c == '}' && pop != '{') || ((c == ']' && pop != '['))) {
+                    if ((map.containsKey(c) && pop != map.get(c))) {
                         return false;
                     }
                 } else {
