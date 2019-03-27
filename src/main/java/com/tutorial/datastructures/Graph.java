@@ -52,6 +52,7 @@ public class Graph {
         String path = "";
         return path;
     }
+
     public int size() {
         return vertices.size();
     }
@@ -77,7 +78,7 @@ public class Graph {
         String from;
         String to;
 
-        public Edge(String from, String to) {
+        Edge(String from, String to) {
             this.from = from;
             this.to = to;
         }

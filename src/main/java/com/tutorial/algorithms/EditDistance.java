@@ -43,7 +43,7 @@ public class EditDistance {
             return distance(str1, str2, m - 1, n - 1);
         }
 
-        return 1 + Math.min(distance(str1, str2, m - 1, n), Math.min(distance(str1, str2, m, n - 1), distance(str1, str2, m - 1, n - 1)));
+        return 1 + min(distance(str1, str2, m - 1, n), distance(str1, str2, m, n - 1), distance(str1, str2, m - 1, n - 1));
     }
 
     private static int distanceDP(String str1, String str2, int m, int n) {
@@ -57,12 +57,20 @@ public class EditDistance {
                 } else if (str1.charAt(i - 1) == str2.charAt(j - 1)) {
                     dp[i][j] = dp[i - 1][j - 1];
                 } else {
-                    dp[i][j] = 1 + Math.min(dp[i - 1][j - 1], Math.min(dp[i - 1][j], dp[i][j - 1]));
+                    dp[i][j] = 1 + min(dp[i - 1][j - 1], dp[i - 1][j], dp[i][j - 1]);
                 }
             }
         }
 
         return dp[m][n];
+    }
+
+    private static int min(int... values) {
+        int min = Integer.MAX_VALUE;
+        for (int val : values) {
+            min = min > val ? val : min;
+        }
+        return min;
     }
 
    /*--------------------------------------------

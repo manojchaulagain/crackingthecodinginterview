@@ -3,10 +3,10 @@ package com.tutorial.datastructures;
 /**
  * Created using IntelliJ IDEA
  * User: Manoj Chaulagain
- * Date: 2019-02-28
- * Time: 22:55
+ * Date: 2019-03-16
+ * Time: 18:59
  */
-public class BinaryTreeRunner {
+public class TestCustomStack {
 
    /*--------------------------------------------
     |             C O N S T A N T S             |
@@ -20,32 +20,25 @@ public class BinaryTreeRunner {
     |         C O N S T R U C T O R S           |
     ============================================*/
 
-    public static void main(String[] args) {
-        int[] vals = {8, 6, 3, 4, 5, 1, 2, 7, 9};
-        BinaryTree tree = new BinaryTree();
-        for (int val : vals) {
-            tree.add(val);
-        }
-        tree.printInOrder();
-        tree.inOrderTraversal();
-
-//        tree.levelOrderTraversal();
-//        tree.convertToMirror();
-//        tree.levelOrderTraversal();
-
-//        tree.convertToSumTree();
-
-//        System.out.println(tree.size());
-//        System.out.println(tree.getHeight());
-//        System.out.println(tree.getHeightIterative());
-//        tree.reverseLevelOrderTraversal();
-//        tree.addBottomUpIterative();
-//        tree.levelOrderTraversal();
-    }
-
    /*--------------------------------------------
     |   P U B L I C    A P I    M E T H O D S   |
     ============================================*/
+
+    public static void main(String[] args) {
+        String val = "This is a stack test";
+        String[] vals = val.split("\\s");
+        CustomQueue<String> cs = new CustomQueue<>();
+        for (String s : vals) {
+            cs.add(s);
+        }
+        StringBuilder sb = new StringBuilder();
+        while (!cs.isEmpty()) {
+            sb.append(cs.poll()).append(" ");
+        }
+
+        System.out.println(sb.toString());
+        System.out.println(cs.isEmpty());
+    }
 
    /*--------------------------------------------
     |    N O N - P U B L I C    M E T H O D S   |

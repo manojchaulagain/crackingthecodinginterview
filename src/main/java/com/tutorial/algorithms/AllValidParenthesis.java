@@ -1,12 +1,12 @@
-package com.tutorial.datastructures;
+package com.tutorial.algorithms;
 
 /**
  * Created using IntelliJ IDEA
  * User: Manoj Chaulagain
- * Date: 2019-02-28
- * Time: 22:55
+ * Date: 2019-03-16
+ * Time: 00:00
  */
-public class BinaryTreeRunner {
+public class AllValidParenthesis {
 
    /*--------------------------------------------
     |             C O N S T A N T S             |
@@ -20,33 +20,31 @@ public class BinaryTreeRunner {
     |         C O N S T R U C T O R S           |
     ============================================*/
 
-    public static void main(String[] args) {
-        int[] vals = {8, 6, 3, 4, 5, 1, 2, 7, 9};
-        BinaryTree tree = new BinaryTree();
-        for (int val : vals) {
-            tree.add(val);
-        }
-        tree.printInOrder();
-        tree.inOrderTraversal();
-
-//        tree.levelOrderTraversal();
-//        tree.convertToMirror();
-//        tree.levelOrderTraversal();
-
-//        tree.convertToSumTree();
-
-//        System.out.println(tree.size());
-//        System.out.println(tree.getHeight());
-//        System.out.println(tree.getHeightIterative());
-//        tree.reverseLevelOrderTraversal();
-//        tree.addBottomUpIterative();
-//        tree.levelOrderTraversal();
-    }
-
+   static int count = 0;
    /*--------------------------------------------
     |   P U B L I C    A P I    M E T H O D S   |
     ============================================*/
 
+    public static void main(String[] args) {
+        int n = 10;
+        printAllValidParentheses("", n, 0);
+        System.out.println(count);
+    }
+
+    private static void printAllValidParentheses(String val, int n, int open) {
+        count++;
+        if (open > n) {
+            return;
+        }
+        if (n == 0 && open == 0) {
+            System.out.println(val);
+            return;
+        }
+        printAllValidParentheses(val + "(", n - 1, open + 1);
+        if (open > 0) {
+            printAllValidParentheses(val + ")", n - 1, open - 1);
+        }
+    }
    /*--------------------------------------------
     |    N O N - P U B L I C    M E T H O D S   |
     ============================================*/

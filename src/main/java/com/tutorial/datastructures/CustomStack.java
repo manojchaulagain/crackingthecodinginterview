@@ -1,12 +1,15 @@
 package com.tutorial.datastructures;
 
+import java.util.ArrayList;
+import java.util.EmptyStackException;
+
 /**
  * Created using IntelliJ IDEA
  * User: Manoj Chaulagain
- * Date: 2019-02-28
- * Time: 22:55
+ * Date: 2019-03-16
+ * Time: 18:51
  */
-public class BinaryTreeRunner {
+public class CustomStack<T> {
 
    /*--------------------------------------------
     |             C O N S T A N T S             |
@@ -16,36 +19,55 @@ public class BinaryTreeRunner {
     |    I N S T A N C E   V A R I A B L E S    |
     ============================================*/
 
+    private int size;
+    private ArrayList<T> list;
    /*--------------------------------------------
     |         C O N S T R U C T O R S           |
     ============================================*/
 
-    public static void main(String[] args) {
-        int[] vals = {8, 6, 3, 4, 5, 1, 2, 7, 9};
-        BinaryTree tree = new BinaryTree();
-        for (int val : vals) {
-            tree.add(val);
-        }
-        tree.printInOrder();
-        tree.inOrderTraversal();
-
-//        tree.levelOrderTraversal();
-//        tree.convertToMirror();
-//        tree.levelOrderTraversal();
-
-//        tree.convertToSumTree();
-
-//        System.out.println(tree.size());
-//        System.out.println(tree.getHeight());
-//        System.out.println(tree.getHeightIterative());
-//        tree.reverseLevelOrderTraversal();
-//        tree.addBottomUpIterative();
-//        tree.levelOrderTraversal();
+    public CustomStack() {
+        this.list = new ArrayList<>();
+        size = 0;
     }
 
    /*--------------------------------------------
     |   P U B L I C    A P I    M E T H O D S   |
     ============================================*/
+
+    public void push(T val) {
+        size++;
+        list.add(val);
+    }
+
+    public T pop() {
+        T val;
+        if (isEmpty()) {
+            throw new EmptyStackException();
+        } else {
+            size--;
+            val = list.get(size);
+            list.remove(val);
+        }
+        return val;
+    }
+
+    public T peek() {
+        T val;
+        if (isEmpty()) {
+            throw new EmptyStackException();
+        } else {
+            val = list.get(size - 1);
+        }
+        return val;
+    }
+
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
+    public int size() {
+        return size;
+    }
 
    /*--------------------------------------------
     |    N O N - P U B L I C    M E T H O D S   |

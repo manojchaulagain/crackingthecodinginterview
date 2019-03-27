@@ -1,12 +1,12 @@
-package com.tutorial.datastructures;
+package com.tutorial.algorithms;
 
 /**
  * Created using IntelliJ IDEA
  * User: Manoj Chaulagain
- * Date: 2019-02-28
- * Time: 22:55
+ * Date: 2019-03-16
+ * Time: 01:39
  */
-public class BinaryTreeRunner {
+public class InterleavingStrings {
 
    /*--------------------------------------------
     |             C O N S T A N T S             |
@@ -20,32 +20,34 @@ public class BinaryTreeRunner {
     |         C O N S T R U C T O R S           |
     ============================================*/
 
-    public static void main(String[] args) {
-        int[] vals = {8, 6, 3, 4, 5, 1, 2, 7, 9};
-        BinaryTree tree = new BinaryTree();
-        for (int val : vals) {
-            tree.add(val);
-        }
-        tree.printInOrder();
-        tree.inOrderTraversal();
-
-//        tree.levelOrderTraversal();
-//        tree.convertToMirror();
-//        tree.levelOrderTraversal();
-
-//        tree.convertToSumTree();
-
-//        System.out.println(tree.size());
-//        System.out.println(tree.getHeight());
-//        System.out.println(tree.getHeightIterative());
-//        tree.reverseLevelOrderTraversal();
-//        tree.addBottomUpIterative();
-//        tree.levelOrderTraversal();
-    }
-
    /*--------------------------------------------
     |   P U B L I C    A P I    M E T H O D S   |
     ============================================*/
+
+    public static void main(String[] args) {
+        String x = "AB";
+        String y = "CD";
+        String s = "ACBDE";
+
+        System.out.println(isInterleavedStrings(x, y, s));
+    }
+
+    private static boolean isInterleavedStrings(String x, String y, String s) {
+        if (x.length() == 0 && y.length() == 0 && s.length() == 0) {
+            return true;
+        }
+        if(s.length() == 0) {
+            return false;
+        }
+        if (x.length() != 0 && x.charAt(0) == s.charAt(0)) {
+            return isInterleavedStrings(x.substring(1), y, s.substring(1));
+        }
+
+        if (y.length() != 0 && y.charAt(0) == s.charAt(0)) {
+            return isInterleavedStrings(x, y.substring(1), s.substring(1));
+        }
+        return false;
+    }
 
    /*--------------------------------------------
     |    N O N - P U B L I C    M E T H O D S   |

@@ -1,12 +1,15 @@
 package com.tutorial.datastructures;
 
+import java.util.EmptyStackException;
+import java.util.LinkedList;
+
 /**
  * Created using IntelliJ IDEA
  * User: Manoj Chaulagain
- * Date: 2019-02-28
- * Time: 22:55
+ * Date: 2019-03-16
+ * Time: 19:12
  */
-public class BinaryTreeRunner {
+public class CustomQueue<T> {
 
    /*--------------------------------------------
     |             C O N S T A N T S             |
@@ -16,36 +19,53 @@ public class BinaryTreeRunner {
     |    I N S T A N C E   V A R I A B L E S    |
     ============================================*/
 
+    private LinkedList<T> list;
+    private int size;
+
    /*--------------------------------------------
     |         C O N S T R U C T O R S           |
     ============================================*/
 
-    public static void main(String[] args) {
-        int[] vals = {8, 6, 3, 4, 5, 1, 2, 7, 9};
-        BinaryTree tree = new BinaryTree();
-        for (int val : vals) {
-            tree.add(val);
-        }
-        tree.printInOrder();
-        tree.inOrderTraversal();
-
-//        tree.levelOrderTraversal();
-//        tree.convertToMirror();
-//        tree.levelOrderTraversal();
-
-//        tree.convertToSumTree();
-
-//        System.out.println(tree.size());
-//        System.out.println(tree.getHeight());
-//        System.out.println(tree.getHeightIterative());
-//        tree.reverseLevelOrderTraversal();
-//        tree.addBottomUpIterative();
-//        tree.levelOrderTraversal();
+    public CustomQueue() {
+        this.list = new LinkedList<>();
+        this.size = 0;
     }
 
    /*--------------------------------------------
     |   P U B L I C    A P I    M E T H O D S   |
     ============================================*/
+
+    public void add(T val) {
+        size++;
+        list.add(val);
+    }
+
+    public T peek() {
+        T val;
+        if (list.isEmpty()) {
+            throw new EmptyStackException();
+        } else {
+            val = list.get(0);
+        }
+        return val;
+    }
+
+    public T poll() {
+        T val = peek();
+        if (val != null) {
+            list.remove(val);
+        }
+        size--;
+        return val;
+    }
+
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
+    public int size() {
+        return size;
+    }
 
    /*--------------------------------------------
     |    N O N - P U B L I C    M E T H O D S   |

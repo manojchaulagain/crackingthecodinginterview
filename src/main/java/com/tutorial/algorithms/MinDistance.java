@@ -1,8 +1,9 @@
 package com.tutorial.algorithms;
 
-class Solution {
+class MinDistance {
 
     public static int minDistance(String word1, String word2) {
+
         return minDistance(word1, word2, word1.length(), word2.length());
     }
 

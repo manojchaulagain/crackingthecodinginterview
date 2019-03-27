@@ -1,12 +1,12 @@
-package com.tutorial.datastructures;
+package com.tutorial.algorithms;
 
 /**
  * Created using IntelliJ IDEA
  * User: Manoj Chaulagain
- * Date: 2019-02-28
- * Time: 22:55
+ * Date: 2019-03-18
+ * Time: 19:42
  */
-public class BinaryTreeRunner {
+public class TestSwapping {
 
    /*--------------------------------------------
     |             C O N S T A N T S             |
@@ -20,32 +20,20 @@ public class BinaryTreeRunner {
     |         C O N S T R U C T O R S           |
     ============================================*/
 
-    public static void main(String[] args) {
-        int[] vals = {8, 6, 3, 4, 5, 1, 2, 7, 9};
-        BinaryTree tree = new BinaryTree();
-        for (int val : vals) {
-            tree.add(val);
-        }
-        tree.printInOrder();
-        tree.inOrderTraversal();
-
-//        tree.levelOrderTraversal();
-//        tree.convertToMirror();
-//        tree.levelOrderTraversal();
-
-//        tree.convertToSumTree();
-
-//        System.out.println(tree.size());
-//        System.out.println(tree.getHeight());
-//        System.out.println(tree.getHeightIterative());
-//        tree.reverseLevelOrderTraversal();
-//        tree.addBottomUpIterative();
-//        tree.levelOrderTraversal();
-    }
-
    /*--------------------------------------------
     |   P U B L I C    A P I    M E T H O D S   |
     ============================================*/
+
+    public static void main(String[] args) {
+        int x = 5;
+        int y = 3;
+        x = x - y;
+        y = y + x;
+        x = y - x;
+        System.out.println(x);
+        System.out.println(y);
+
+    }
 
    /*--------------------------------------------
     |    N O N - P U B L I C    M E T H O D S   |

@@ -1,12 +1,15 @@
-package com.tutorial.datastructures;
+package com.tutorial.algorithms;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created using IntelliJ IDEA
  * User: Manoj Chaulagain
- * Date: 2019-02-28
- * Time: 22:55
+ * Date: 2019-03-25
+ * Time: 11:53
  */
-public class BinaryTreeRunner {
+public class GenerateListMap {
 
    /*--------------------------------------------
     |             C O N S T A N T S             |
@@ -20,33 +23,27 @@ public class BinaryTreeRunner {
     |         C O N S T R U C T O R S           |
     ============================================*/
 
-    public static void main(String[] args) {
-        int[] vals = {8, 6, 3, 4, 5, 1, 2, 7, 9};
-        BinaryTree tree = new BinaryTree();
-        for (int val : vals) {
-            tree.add(val);
-        }
-        tree.printInOrder();
-        tree.inOrderTraversal();
-
-//        tree.levelOrderTraversal();
-//        tree.convertToMirror();
-//        tree.levelOrderTraversal();
-
-//        tree.convertToSumTree();
-
-//        System.out.println(tree.size());
-//        System.out.println(tree.getHeight());
-//        System.out.println(tree.getHeightIterative());
-//        tree.reverseLevelOrderTraversal();
-//        tree.addBottomUpIterative();
-//        tree.levelOrderTraversal();
-    }
-
    /*--------------------------------------------
     |   P U B L I C    A P I    M E T H O D S   |
     ============================================*/
 
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5};
+        buildMap(arr, x -> x * x).forEach((x, k) -> System.out.println(x + " -> " + k));
+
+    }
+
+    public static Map<Integer, Integer> buildMap(int[] arr, TestInterface testInterface) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int x : arr) {
+            map.put(x, testInterface.square(x));
+        }
+        return map;
+    }
+
+    interface TestInterface {
+        int square(int x);
+    }
    /*--------------------------------------------
     |    N O N - P U B L I C    M E T H O D S   |
     ============================================*/
